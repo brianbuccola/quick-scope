@@ -422,7 +422,7 @@ function! s:reload()
   let &guicursor = s:guicursor
 
   " Restore default <c-c> functionality
-  execute 'nunmap <c-c>'
+  execute 'nmap <c-c> <Plug>SearchantStop'
 
   call s:unhighlight_line()
 
